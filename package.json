@@ -1,0 +1,11 @@
+{
+  "name": "jccf-connect",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.34.9",
+  "scripts": {
+    "dev:web": "pnpm --dir apps/web dev",
+    "build:web": "pnpm --dir apps/web build",
+    "typecheck:web": "pnpm --dir apps/web exec tsc --noEmit"
+  }
+}

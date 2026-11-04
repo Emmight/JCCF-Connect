@@ -1,0 +1,151 @@
+
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #17251d;
+  background: #fafbf9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --jccf-green: #087443;
+  --jccf-forest: #063d29;
+  --jccf-gold: #f7d94a;
+  --jccf-ink: #17251d;
+  --jccf-muted: #647168;
+  --jccf-border: #e2e9e3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+  background: #fafbf9;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--jccf-ink);
+  background:
+    radial-gradient(ellipse at 50% -18rem, rgb(8 116 67 / 5%), transparent 48rem),
+    #fafbf9;
+  line-height: 1.5;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+select,
+textarea {
+  accent-color: var(--jccf-green);
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    background-color 160ms ease;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):focus,
+select:focus,
+textarea:focus {
+  border-color: var(--jccf-green);
+  box-shadow: 0 0 0 4px rgb(8 116 67 / 10%);
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgb(247 217 74 / 90%);
+  outline-offset: 3px;
+}
+
+::placeholder {
+  color: #98a39a;
+  opacity: 1;
+}
+
+::selection {
+  color: white;
+  background: var(--jccf-green);
+}
+
+.admin-workspace {
+  color: #17251d;
+}
+
+.admin-workspace :is(section, article, form) {
+  border-radius: 1.25rem;
+}
+
+.admin-workspace input:not([type="checkbox"]):not([type="radio"]),
+.admin-workspace select,
+.admin-workspace textarea {
+  border-radius: 0.8rem;
+  background-color: white;
+}
+
+.admin-workspace button {
+  border-radius: 0.85rem;
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.admin-workspace button:hover:enabled {
+  box-shadow: 0 8px 18px -14px rgb(6 61 41 / 45%);
+}
+
+.admin-workspace table thead {
+  letter-spacing: 0.08em;
+}
+
+.admin-workspace table tbody tr {
+  transition: background-color 140ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

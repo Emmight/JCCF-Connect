@@ -1,0 +1,48 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793461375393,
+      "tag": "0000_chilly_jocasta",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793495313875,
+      "tag": "0001_magenta_secret_warriors",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793499126712,
+      "tag": "0002_spicy_wildside",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1793501169387,
+      "tag": "0003_shallow_bloodscream",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1793698069714,
+      "tag": "0004_common_betty_brant",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1793700615026,
+      "tag": "0005_gifted_toad_men",
+      "breakpoints": true
+    }
+  ]
+}
