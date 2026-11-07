@@ -246,7 +246,7 @@ function HomePage() {
   const administrationName = currentAdministration?.name;
 
   return (
-    <main className="min-h-screen overflow-hidden bg-[#FAFBF9] text-[#17251D]">
+    <main className="min-h-screen overflow-x-clip bg-[#FAFBF9] text-[#17251D]">
       <PageMeta
         title="JCCF Connect | University of Offa Chapter"
         description="Discover Joint Christian Campus Fellowship at the University of Offa: our community, programmes, leadership and fellowship updates."
